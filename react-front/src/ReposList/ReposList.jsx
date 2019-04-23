@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import ReposListComponent from "./ReposListComponent";
+import ReposListComponent from './ReposListComponent';
 
-import {bindActionCreators} from "redux";
-import {connect} from "react-redux";
-import {getRepos} from "../redux/actions/repos";
-import Button from "../Button/Button";
-import "./ReposList.scss";
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {getRepos} from '../redux/actions/repos';
+import Button from '../Button/Button';
+import './ReposList.scss';
 
 type State = {
   buttonClicked: boolean

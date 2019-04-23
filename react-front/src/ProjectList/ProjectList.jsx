@@ -2,12 +2,12 @@
 import React, {Component} from 'react';
 import ProjectListComponent from './ProjectListComponent';
 
-import {connect} from "react-redux";
-import {bindActionCreators} from "redux";
-import {getProjects} from "../redux/actions/projects";
-import ReposList from "../ReposList/ReposList";
-import type {Action, Projects} from "../redux/type";
-import "./ProjectList.scss";
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {getProjects} from '../redux/actions/projects';
+import ReposList from '../ReposList/ReposList';
+import type {Action, Projects} from '../redux/type';
+import './ProjectList.scss';
 
 
 
@@ -27,7 +27,7 @@ class ProjectList extends Component<Props> {
     const {loading, projects} = this.props;
     return (
       <main>
-        <div className="flex">
+        <div className='flex'>
           <ProjectListComponent
             projects={projects}
             loading={loading}

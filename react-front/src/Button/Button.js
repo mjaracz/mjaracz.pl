@@ -9,7 +9,7 @@ interface Props {
 
 const Button = ({buttonOnClick, buttonClicked}: Props) => {
   return(
-    <div className="main__button--container">
+    <div className='main__button--container'>
       <button
         className={buttonClicked ? 'main__button main__button--extended' : 'main__button'}
         onClick={buttonOnClick}
