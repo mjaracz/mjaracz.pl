@@ -1,7 +1,13 @@
+//@flow
 import React from 'react';
 import './Button.css';
 
-const Button = ({buttonOnClick, buttonClicked}) => {
+interface Props {
+  buttonOnClick(): void,
+  buttonClicked: boolean
+}
+
+const Button = ({buttonOnClick, buttonClicked}: Props) => {
   return(
     <div className="main__button--container">
       <button

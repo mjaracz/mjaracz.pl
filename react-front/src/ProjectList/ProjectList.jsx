@@ -6,12 +6,17 @@ import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import {getProjects} from "../redux/actions/projects";
 import ReposList from "../ReposList/ReposList";
+import type {Action, Projects} from "../redux/type";
 import "./ProjectList.scss";
 
+
+
 interface Props {
-  repos: Object[],
-  getRepos(): Object,
-  getProjects(): Object
+  projects: Projects[],
+  getProjects(): Action,
+  getRepos(): Action,
+  loading: boolean,
+  error: Object,
 }
 
 class ProjectList extends Component<Props> {

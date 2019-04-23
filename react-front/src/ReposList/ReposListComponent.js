@@ -1,7 +1,15 @@
+//@flow
 import React from 'react';
 import CircularProgress from "@material-ui/core/CircularProgress";
+import type {Repos} from "../redux/type";
 
-const ReposListComponent = ({repos, buttonClicked, loading}) => {
+interface Props {
+  buttonClicked: boolean,
+  loading: boolean,
+  repos: Repos[]
+}
+
+const ReposListComponent = ({repos, buttonClicked, loading}: Props) => {
   return(
     <div className="main__repos--container">
       {

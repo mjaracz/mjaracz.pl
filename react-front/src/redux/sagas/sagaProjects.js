@@ -3,7 +3,7 @@ import {get} from '../api'
 
 function* getProjects() {
   try {
-    const url = 'http://localhost:3000/api/projects';
+    const url = 'https://morning-headland-42992.herokuapp.com/api/projects';
     const data = yield call(get, url);
     yield put({type: 'FETCH_PROJECTS', payload: data.projects})
   }

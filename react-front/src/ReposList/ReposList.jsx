@@ -7,7 +7,11 @@ import {getRepos} from "../redux/actions/repos";
 import Button from "../Button/Button";
 import "./ReposList.scss";
 
-class ReposList extends Component {
+type State = {
+  buttonClicked: boolean
+}
+
+class ReposList extends Component<null, State> {
   constructor(props) {
     super(props);
 
