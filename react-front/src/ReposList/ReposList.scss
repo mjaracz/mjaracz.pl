@@ -1,0 +1,19 @@
+.main__repos--container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__repos {
+  text-decoration: none;
+  color: #6ac2ff;
+  display: block;
+  margin: 23px;
+}
+
+.main__progress > svg {
+  color: #6ac2ff;
+}

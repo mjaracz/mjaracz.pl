@@ -1,0 +1,43 @@
+.main__card {
+  height: 168px;
+  width: 300px;
+  margin: 35px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card__image {
+  width: 300px;
+  height: 168px;
+  background-repeat: no-repeat;
+  transition: .5s;
+}
+
+@for $i from 0 through 2 {
+  .card__image#{$i} {
+    background-image: url('../../assets/img' + $i + '.png');
+  }
+}
+
+.card__title {
+  position: relative;
+  top: -63%;
+  opacity: 0;
+  transition: .5s;
+  text-align: center;
+  color: #f6f6f6;
+  background: #04060c;
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.main__card:hover > .card__title {
+  opacity: 1;
+}
+.main__card:hover > .card__image {
+  filter: blur(10px);
+}
