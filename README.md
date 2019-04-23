@@ -15,4 +15,4 @@ To lunch the app, typing in your project directory:
 The catalog structure is prepared by the division of applications by particular Feature. Component have only .js extension, and containers have .jsx suffix. Components always are funkcional without state. 
 
 To see live example visit website: <br>
-http://mjaracz.pl
+http://www.mjaracz.pl
