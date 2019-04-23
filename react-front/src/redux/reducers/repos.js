@@ -3,7 +3,6 @@
 const InitialState = {
   loading: false,
   reposData: [],
-  projects: [],
   error: {}
 };
 type Store = typeof(InitialState)

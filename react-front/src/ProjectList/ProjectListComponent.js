@@ -17,5 +17,4 @@ const ProjectListComponent = (props: Props) => {
   )
 };
 
-
 export default ProjectListComponent;

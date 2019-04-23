@@ -47,8 +47,8 @@ class ReposList extends Component<null, State> {
 }
 
 const mapStateToProps = (state) => ({
-  repos: state.repos.reposData,
   loading: state.repos.loading,
+  repos: state.repos.reposData,
   error: state.repos.error
 });
 
